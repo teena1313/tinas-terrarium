@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +12,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,
-      greenTint: "#228912",
+//      greenTint: "#228912",
       white: colors.white,
       primary: colors.neutral,
       secondary: colors.blue,

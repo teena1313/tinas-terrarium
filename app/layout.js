@@ -1,9 +1,12 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"] });
+const poppins = Poppins({ 
+  subsets: ["latin"],
+  weight: "200"
+});
 
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",

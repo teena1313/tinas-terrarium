@@ -5,7 +5,8 @@ export default function Page() {
             <Image
                 src="/mountain.jpg"
                 width={500}
-                alt="Picture of the author"
+                height={500}
+                alt="Picture of a mountain"
             />
             <p>photos :D</p>
         </>
