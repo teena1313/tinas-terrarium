@@ -26,6 +26,11 @@ export default function Home() {
     },
     isMarried: true,
   };
+  const cat = {
+    name: "Lionel",
+    age: 13,
+    colors: ["orange", "white"],
+  }
 
   return (
     <Container>
@@ -47,15 +52,15 @@ function Person({ person }) {
         </p>
       </div>
       <div className="space-y-1">
-        <h4 className="font-medium">Hobbies</h4>
+        <h4 className="font-medium">Colors</h4>
         <ul className="flex flex-wrap gap-2 text-sm text-secondary-800">
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Hobby 1</li>
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Hobby 2</li>
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Hobby 3</li>
+          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 1</li>
+          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 2</li>
+          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 3</li>
         </ul>
       </div>
       <div className="space-y-1">
-        <h4 className="font-medium">Contact</h4>
+        <h4 className="font-medium">Owner Contact</h4>
         <ul className="font-mono text-sm">
           <li>{person.contact.email}</li>
           <li>{person.contact.phone}</li>
