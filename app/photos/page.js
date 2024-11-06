@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DogFact from "../components/Dogfact";
 import Container from "../components/Container";
 // export default function Page() {
 //     return (
@@ -20,6 +21,7 @@ export default async function Photos() {
   
     return (
       <Container>
+        <DogFact />
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {dogs.map((dog) => (
             <DogCard key={dog.name} dog={dog} />
@@ -42,9 +44,6 @@ async function getDogs() {
     return res.json();
 }
 
-async function getFact(){
-  fetch("https://dog-api.kinduff.com/api/facts")
-}
 
 // async function getPersons() {
 //     const res = await fetch("https://jsonplaceholder.typicode.com/users");
