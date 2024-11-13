@@ -20,7 +20,7 @@ export default function Navbar() {
               <Link href="/photos">Photos</Link>
             </li>
             <li className="md:hover:underline">
-              <Link href="/photos">Photos</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
