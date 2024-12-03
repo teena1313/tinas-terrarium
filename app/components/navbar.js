@@ -20,8 +20,12 @@ export default function Navbar() {
               <Link href="/photos">Photos</Link>
             </li>
             <li className="md:hover:underline">
+              <Link href="/miniProj">Mini Projects</Link>
+            </li>
+            <li className="md:hover:underline">
               <Link href="/contact">Contact</Link>
             </li>
+
           </ul>
         </div>
       </nav>
