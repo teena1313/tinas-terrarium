@@ -3,7 +3,6 @@ import Container from "@/app/components/Container";
 
 export default async function Photos() {
     const dogs = await getDogs();
-    //const persons = await getPersons();
   
     return (
       <Container>
@@ -12,9 +11,6 @@ export default async function Photos() {
           {dogs.map((dog) => (
             <DogCard key={dog.name} dog={dog} />
           ))}
-          {/* {persons.map((person) => (
-            <PersonCard key={person.name} person={person} />
-          ))} */}
         </ul>
       </Container>
     );

@@ -1,4 +1,5 @@
 import Container from "@/app/components/Container";
+import PopUp from "@/app/components/PopUp";
 import { promises as fs } from 'fs';
 
 export default async function DSOHome() {
@@ -33,7 +34,10 @@ function DSOCard({ dso }) {
             {dso.distance >= 100 ? " That's very far!" : ""}
           </p>
         </div>
+        <PopUp key = {dso.name} dso={dso}/>
       </div>
     </li>
   );
 }
+
+

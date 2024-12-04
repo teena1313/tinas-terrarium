@@ -16,7 +16,7 @@ export default async function Blog() {
   );
 }
 async function getBlogPosts() {
-    const query = `*[_type == "blogPost"] | order(date desc) {
+  const query = `*[_type == "blogPost"] | order(date desc) {
       title,
       description,
       date,

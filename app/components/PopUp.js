@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 
-export default function PopUp() {
+export default function PopUp( {dso} ) {
    const [isOpen, setIsOpen] = useState(false)
    const customStyles = {
       overlay: {
@@ -20,10 +20,22 @@ export default function PopUp() {
    }
    return (
       <div>
-         <button onClick={() => setIsOpen(true)}>Open Modal</button>
+         <button onClick={() => setIsOpen(true)}>Fun Facts</button>
          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
-            <h1>Modal Content</h1>
-            <button onClick={() => setIsOpen(false)}>Close Modal</button>
+            <h4 className="text-sm font-medium">Fun Fact</h4>
+            <ul className="flex flex-wrap gap-2">
+               {dso.fun_facts.map((fact) => (
+                  <div>
+                     <li
+                        key={fact}
+                        className="text-xs text-secondary-800 px-2 py-0.5 bg-secondary-100"
+                     >
+                     {fact}
+                     </li>
+                  </div>
+               ))}
+            </ul>
+            <button onClick={() => setIsOpen(false)}>Close</button>
          </Modal>
       </div>
    )
