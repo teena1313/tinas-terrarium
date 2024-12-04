@@ -1,62 +1,39 @@
 import Container from "@/app/components/Container";
+import { promises as fs } from 'fs';
 
-export default function Home() {
-  const person = {
-    name: "John Doe",
-    age: 30,
-    hobbies: ["reading", "hiking", "coding"],
-    address: {
-      street: "123 Main St",
-      city: "New York",
-      state: "NY",
-      zip: "10001",
-    },
-    contact: {
-      email: "john@email.com",
-      phone: "123-456-7890",
-    },
-    isMarried: true,
-  };
-  const cat = {
-    name: "Lionel",
-    age: 13,
-    colors: ["orange", "white"],
-  }
-
+export default async function DSOHome() {
+  const file = await fs.readFile(process.cwd() + '/app/miniProj/deepSkyObjects/DSO.json', 'utf8');
+  const dsos = JSON.parse(file);
   return (
     <Container>
-      <Person person={person}/>
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {dsos.map((dso) => (
+          <DSOCard key={dso.name} dso={dso} />
+        ))}
+      </ul>
     </Container>
   );
 }
 
-function Person({ person }) {
+function DSOCard({ dso }) {
   return (
-    <div className="max-w-sm border border-primary-200 rounded-xl px-4 pb-4 pt-6 bg-gradient-to-bl from-secondary-100 to-white via-white md:hover:shadow-xl md:hover:scale-105 transition-all space-y-4">
-      <div className="space-y-2">
-        <h3 className="font-medium text-xl">{person.name}</h3>
-        <p className="flex items-center justify-start space-x-2 text-xs font-medium uppercase text-primary-600">
-          {person.age} years old & ???
-        </p>
-        <p className="text-sm text-primary-500 underline">
-          {person.street} {person.city} {person.state} {person.zip}
-        </p>
+    <li className="border md:hover:scale-105 transition-transform border-primary-200 bg-gradient-to-tr from-secondary-500 to-secondary-100 via-white rounded-xl p-4 flex items-start justify-start space-x-4">
+      <img
+        src={dso.pic}
+        alt={dso.name}
+        className="w-40 h-40 rounded-lg border object-cover border-primary-200"
+      />
+      <div className="space-y-4">
+        <div className="space-y-1">
+          <h3 className="text-lg font-medium">{dso.name}</h3>
+          <p className="text-xs font-medium text-primary-600">
+            {dso.distance} lightyear{dso.distance === 1 ? "" : "s"} away.
+          </p>
+          <p className="text-xs font-medium text-primary-600">
+            {dso.distance >= 100 ? " That's very far!" : ""}
+          </p>
+        </div>
       </div>
-      <div className="space-y-1">
-        <h4 className="font-medium">Colors</h4>
-        <ul className="flex flex-wrap gap-2 text-sm text-secondary-800">
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 1</li>
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 2</li>
-          <li className="bg-secondary-100 px-2 py-0.5 rounded-full">Color 3</li>
-        </ul>
-      </div>
-      <div className="space-y-1">
-        <h4 className="font-medium">Owner Contact</h4>
-        <ul className="font-mono text-sm">
-          <li>{person.contact.email}</li>
-          <li>{person.contact.phone}</li>
-        </ul>
-      </div>
-    </div>
+    </li>
   );
 }

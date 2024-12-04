@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
   if (!pathname.includes("/studio")) {
     return (
-      <nav className="border-b sticky top-0 bg-primary-900 text-primary-100 border-primary-800 z-10">
+      <nav className="border-b sticky top-0 bg-violet text-primary-100 border-primary-800 z-10">
         <div className="h-14 max-w-7xl p-4 mx-auto flex items-center justify-between">
           <Link href="/" className="font-medium text-lg md:hover:underline">
             My Website

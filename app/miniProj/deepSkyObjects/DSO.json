@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Carina Nebula",
+        "distance": 8500,
+        "type": "Emission nebula",
+        "pic": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV45OHQMnWf_0r_RGkOrGag11R8M7kSYcdS2EyQsmQbd_-3hn_q40op3SGaNP20U21TcDUsPsAERlwBDCXYUTFtkVUhzdcOSCR2urNINRuRf1axVHFPghRMms0TV-GDVylllyTd51bdqEv77qyXJpOSnVgYczv87_BtDQDFr2p_eaWq5CcsFcWaFU0/w640-h466/The%20Carina%20Nebula%20-%20Ian%20Inverarity%20(06-03-23).jpg",
+        "fun_facts": ["Radiation from its stars ionizes the gas in the nebula and causes it to glow.", "It's huge! About 300 ly across.", "It's visible with the naked eye from the southern hemisphere."]
+    },
+    {
+        "name": "TW Hya",
+        "distance": 170,
+        "type": "Classical T Tauri star",
+        "pic": "https://stsci-opo.org/STScI-01GYWXJ78KNQZYP6Z641Q9P9EC.png",
+        "fun_facts": ["Astronomers are not sure if there is a planet orbiting it or not.", "Methanol (building block of life!) was was detected in the star’s protoplanetary disk by ALMA."]
+    },
+    {
+        "name": "Beta Pictoris",
+        "distance": 63.4,
+        "type": "A-type main sequence star",
+        "pic": "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/2023/09/eso0842a.jpg?w=2048&format=webp&fit=clip&crop=faces%2Cfocalpoint",
+        "fun_facts": ["This star is well-known for havnig a dusty debris disc that surrounds it, it's the only directly imaged disk that has a giant planet in it.", "It's 75% more massive than the sun.", "It has a gas giant expoplanet orbiting it, which was directly imaged in 2008!", "A second planet was discovered through radial velocity measurements in 2019."]
+    },
+    {
+        "name": "HR 8799",
+        "distance": 133.3,
+        "type": "F-type main sequence star",
+        "pic": "https://stsci-opo.org/STScI-01G5AKRHSXK62ZKW1N4WXB5E8Q.jpg",
+        "fun_facts": ["It has four planets orbiting it and has a strikingly similar architecture to the Solar System, surrounding a warm dust belt (analogous to the Asteroid Belt) and being surrounded by a cold dust belt (analogous to the Kuiper Belt).", "Collision of the planets may be likely based on observations of the cold dust belt.", 
+                        "Definite CO and H2O absorption lines were detected in planet c's atmosphere.", "The four planets are currently in a stable 8:4:2:1 Mean-motion resonance."]
+    }
+]
