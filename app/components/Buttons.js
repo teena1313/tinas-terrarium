@@ -1,6 +1,6 @@
 export function FilledButton({ children }) {
     return (
-      <DefaultButton style="bg-secondary-200 border-secondary-700 text-secondary-100 md:hover:bg-secondary-400 md:hover:border-secondary-900 md:hover:text-secondary-300">
+      <DefaultButton style="bg-secondary-200 border-secondary-700 text-secondary-600 md:hover:bg-secondary-200 md:hover:border-secondary-900 md:hover:text-secondary-400">
         {children}
       </DefaultButton>
     );

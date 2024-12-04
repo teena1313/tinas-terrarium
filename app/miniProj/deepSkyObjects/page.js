@@ -34,7 +34,7 @@ function DSOCard({ dso }) {
             {dso.distance >= 100 ? " That's very far!" : ""}
           </p>
         </div>
-        <PopUp key = {dso.name} dso={dso}/>
+        <PopUp key = {dso.name} dso={dso} />
       </div>
     </li>
   );
