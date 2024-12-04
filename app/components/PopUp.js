@@ -28,14 +28,12 @@ export default function PopUp( {dso} ) {
             <br/>
             <ul className="flex flex-col gap-y-5">
                {dso.fun_facts.map((fact) => (
-                  <div>
-                     <li
-                        key={fact}
-                        className="text-xs text-secondary-800 px-2 py-0.5 bg-secondary-100"
-                     >
-                     {fact}
-                     </li>
-                  </div>
+                  <li
+                     key={fact}
+                     className="text-xs text-secondary-800 px-2 py-0.5 bg-secondary-100"
+                  >
+                  {fact}
+                  </li>
                ))}
             </ul>
             <br/>
