@@ -1,18 +1,15 @@
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { Poppins } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const poppins = Poppins({ 
-  subsets: ["latin"],
-  weight: "200"
-});
+const opensans = Open_Sans({ subsets: ["latin"]});
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata = {
   title: "Tina's Terrarium",
@@ -23,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${geistMono.variable} antialiased`}
+        className={`${opensans.className} antialiased`}
       >
         <Navbar />
         {children}

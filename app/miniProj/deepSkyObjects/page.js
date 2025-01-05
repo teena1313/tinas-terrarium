@@ -34,7 +34,7 @@ function DSOCard({ dso }) {
             {dso.distance >= 100 ? " That's very far!" : ""}
           </p>
         </div>
-        <PopUp>
+        <PopUp name = "Fun Fact!">
           <h4 className="text-lg font-medium gap-3">Fun Fact</h4>
           <br/>
           <ul className="flex flex-col gap-y-5">
