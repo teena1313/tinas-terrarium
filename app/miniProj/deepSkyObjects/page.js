@@ -34,7 +34,18 @@ function DSOCard({ dso }) {
             {dso.distance >= 100 ? " That's very far!" : ""}
           </p>
         </div>
-        <PopUp key = {dso.name} dso={dso} />
+        <PopUp>
+          <h4 className="text-lg font-medium gap-3">Fun Fact</h4>
+          <br/>
+          <ul className="flex flex-col gap-y-5">
+            {dso.fun_facts.map((fact) => (
+              <li key={fact} className="text-xs text-secondary-800 px-2 py-0.5 bg-secondary-100">
+              {fact}
+              </li>
+            ))}
+          </ul>
+          <br/>
+        </PopUp>
       </div>
     </li>
   );
