@@ -1,9 +1,13 @@
 // import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Open_Sans } from "next/font/google";
 
 const opensans = Open_Sans({ subsets: ["latin"]});
+
+// import { Big_Shoulders_Inline_Display } from 'next/font/google'
+// const display = Big_Shoulders_Inline_Display({ subsets: ["latin"]});
 
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
@@ -23,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${opensans.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

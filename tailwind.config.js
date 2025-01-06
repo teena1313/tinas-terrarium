@@ -17,7 +17,11 @@ module.exports = {
       primary: colors.neutral,
       secondary: colors.lime,
     },
-    extend: {},
+    extend: {      
+      backgroundImage: {
+        home: "url('/nature.jpg')",
+      },
+    },
   },
   plugins: [],
 };
