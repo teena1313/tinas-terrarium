@@ -1,15 +1,13 @@
 import Image from "next/image";
 import {FilledButton} from "./components/Buttons";
 import Card from "./components/Card";
-import pfp from '@/app/public/profile.jpg';
-import placeholder from '@/app/public/placeholder.jpg';
 
 export default function Home() {
   const facts = [
     {
       blurb: "Languages",
       description: "I'm bilingual in English and Mandarin, and I'm currently learning French for fun!",
-      photo: placeholder,
+      photo: "/placeholder.jpg",
       alt: "a photo",
 
     },
@@ -18,14 +16,14 @@ export default function Home() {
       description: "I was born in Taiwan and moved to the US when I was 10 years old. " +
                     "I've lived in the US for almost as long as I have lived in Taiwan now, after my birthday this year " +
                     "I will have lived in the US longer than I had lived in Taiwan :O",
-      photo: placeholder,
+      photo: "/placeholder.jpg",
       alt: "a photo",
     },
     {
       blurb: "Hobby",
       description: "I prefer reading over watching movies and TV series. I read a lot of manga but I've barely watched any anime." +
                     "Some of my favorites include Chainsaw Man, Saint Young Man, Kindergarten Wars, and many more... ",
-      photo: placeholder,
+      photo: "/placeholder.jpg",
       alt: "a photo",
     },
   ];
@@ -52,7 +50,7 @@ export default function Home() {
                 </FilledButton>
               </div>
             </div>
-          <Image className="left-10" src={pfp} width={360} height={450} alt="Photo of the author"/>
+          <Image className="left-10" src="/profile.jpg" width={360} height={450} alt="Photo of the author"/>
         </div>
       </header>
 
