@@ -17,7 +17,7 @@ export default function Navbar() {
               <Link href="/blog">Blog</Link>
             </li>
             <li className="md:hover:underline">
-              <Link href="/photos">Photos</Link>
+              <Link href="/art">Art</Link>
             </li>
             <li className="md:hover:underline">
               <Link href="/miniProj">Mini Projects</Link>

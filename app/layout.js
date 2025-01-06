@@ -17,11 +17,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body
-        className={`${opensans.className} antialiased`}
-      >
+      <body className={`${opensans.className} antialiased`}>
         <Navbar />
         {children}
       </body>
