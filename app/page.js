@@ -21,7 +21,7 @@ export default function Home() {
     },
     {
       blurb: "Hobby",
-      description: "I prefer reading over watching movies and TV series. I read a lot of manga but I've barely watched any anime." +
+      description: "I prefer reading over watching movies and TV series, which is why I read a lot of manga but I've barely watched any anime. " +
                     "Some of my favorites include Chainsaw Man, Saint Young Man, Kindergarten Wars, and many more... ",
       photo: "/placeholder.jpg",
       alt: "a photo",
@@ -35,12 +35,12 @@ export default function Home() {
         <div className="bg-nature flex flex-row sm: flex-col md:flex-row gap-8 md:gap-24 p-6 sm:p-10 py-16 sm:py-20 w-screen">
             <div className="flex flex-col sm: flex-row gap-8 md:gap-15 py-20" >
               <h1 className="text-white text-5xl sm:text-6xl text-center md:text-start font-extrabold">
-                Tina's{" "}
-                <span className="text-secondary-300">Terrarium</span>
+                Hello, and{" "}
+                <span className="text-secondary-300">Welcome!</span>
               </h1>
               <div className="text-center md:text-start">
                 <p className="text-white text-lg mb-12 max-w-screen-md px-1">
-                Hi there! My name is Ting-Syuan 廷瑄 Lai, or just Tina for short.
+                My name is Ting-Syuan 廷瑄 Lai, or just Tina for short.
                 I’m a third-year undergraduate student who finds purpose in connecting with my community through
                 working campus jobs and volunteering. I’ve mainly been growing my technical background through classes 
                 and personal projects. I’m looking for internships, research, or other new experiences to further expand my knowledge!
