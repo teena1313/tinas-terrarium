@@ -32,7 +32,7 @@ export default function Home() {
     <div>
       {/* Header */}
       <header className="bg-darkgreen flex items-center justify-center">
-        <div className="bg-nature flex flex-row sm: flex-col md:flex-row gap-8 md:gap-24 p-6 sm:p-10 py-16 sm:py-20 w-screen">
+        <div className="items-center bg-nature flex flex-row sm: flex-col md:flex-row gap-8 md:gap-24 lg: p-6 sm:p-10 py-16 sm:py-20 w-700">
             <div className="flex flex-col sm: flex-row gap-8 md:gap-15 py-20" >
               <h1 className="text-white text-5xl sm:text-6xl text-center md:text-start font-extrabold">
                 Hello, and{" "}
