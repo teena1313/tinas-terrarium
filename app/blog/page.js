@@ -21,9 +21,11 @@ async function getBlogPosts() {
       description,
       date,
       "slug":slug.current,
-      image
+      image,
+      content
     }`;
   
-    const posts = await client.fetch(query, { next: {revalidate:84600 } });
+    // const posts = await client.fetch(query, { next: {revalidate:84600 } });
+    const posts = await client.fetch(query);
     return posts;
   }

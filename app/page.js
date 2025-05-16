@@ -45,7 +45,7 @@ export default function Home() {
                 working campus jobs and volunteering. I’ve mainly been growing my technical background through classes 
                 and personal projects. I’m looking for internships, research, or other new experiences to further expand my knowledge!
                 </p>
-                <FilledButton href="https://www.google.com" className="">
+                <FilledButton href="https://www.linkedin.com/in/ting-syuan-lai/" className="">
                   Visit my LinkedIn
                 </FilledButton>
               </div>

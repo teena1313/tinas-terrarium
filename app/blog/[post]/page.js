@@ -39,8 +39,8 @@ async function getBlogPost(slug) {
     content
   }`;
 
-  const posts = await client.fetch(query, { slug });
-  return posts;
+  const post = await client.fetch(query, { slug });
+  return post;
 }
 
 function ImageComponent({ value }) {
